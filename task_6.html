@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 1</title>
+</head>
+
+<body>
+    <script>
+        /*Реализовать функцию с тремя параметрами: function mathOperation(arg1, arg2, operation), где arg1, arg2 – значения аргументов, operation – строка с названием операции. В зависимости от переданного значения операции выполнить одну из арифметических операций (использовать функции из пункта 5) и вернуть полученное значение (использовать switch).*/
+        function addition(arg1, arg2) {
+            return arg1 + arg2;
+        }
+
+        function subtraction(arg1, arg2) {
+            return arg1 - arg2;
+        }
+
+        function multiplication(arg1, arg2) {
+            return arg1 * arg2;
+        }
+
+        function division(arg1, arg2) {
+            return arg1 / arg2;
+        }
+
+        function mathOperation(arg1, arg2, operation) {
+            switch (operation) {
+                case addition:
+                    return arg1 + arg2;
+                    break;
+                case subtraction:
+                    return arg1 - arg2;
+                    break;
+                case division:
+                    return arg1 / arg2;
+                    break;
+                case multiplication:
+                    return arg1 * arg2;
+                    break;
+            }
+        }
+        result = mathOperation(10, 2, addition);
+        alert(result);
+
+
+
+    </script>
+</body>
+
+</html>
