@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 1</title>
+</head>
+
+<body>
+    <script>
+        const basket = [
+            ['доска', 300, 1],
+            ['брус', 800, 2],
+        ];
+
+        function countBasketPrise(basket) {
+            let totalPrise = 0;
+            basket.forEach((cartItem) => {
+                totalPrise += cartItem[1] * cartItem[2];
+            });
+            return totalPrise;
+        }
+
+        console.log(countBasketPrise(basket));
+
+
+    </script>
+</body>
+
+</html>
