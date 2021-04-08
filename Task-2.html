@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lesson 1</title>
+</head>
+
+<body>
+    <script>
+
+        const basket = {
+            goods: [
+                {
+                    id_product: 123,
+                    product_name: "доска",
+                    price: 300,
+                    quantity: 1
+                },
+                {
+                    id_product: 456,
+                    product_name: "брус",
+                    price: 300,
+                    quantity: 1
+                }
+            ],
+            countBasketPrice() {
+                return this.goods.reduce((totalPrise, cartItem) => totalPrise + cartItem.price * cartItem.quantity, 0);
+            },
+        };
+
+
+        console.log(basket.countBasketPrice());
+
+    </script>
+</body>
+
+</html>
